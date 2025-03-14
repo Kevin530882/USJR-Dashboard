@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'dmserif';
+    src: url(https://fonts.googleapis.com);
+}
+
+body {
+    background-color: #d9d9d9;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    font-family: 'dmserif';
+}
+
+header {
+    background-image: linear-gradient(to right, #013220, #063407);
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+header div {
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    align-content: center;
+    gap: 20px;
+}
+
+header div h6, header div h1 {
+    margin: auto;
+}
+
+header div h1 {
+    font-weight: bolder;
+}
+
+header div img {
+    height: 80px;
+    width: 80px;
+}
+
+main {
+    margin: auto;
+    width: 90%;
+    height: 600px;
+    display: flex;
+    gap: 10px;
+}
+
+section {
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 20px;
+}
+
+.content {
+    width: 1200px;
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, 1);
+    gap: 10px;
+}
+
+.students {
+    width: 380px;
+    color: #063407;
+}
+
+a {
+    background-color: #063407;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+a svg {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+a:hover svg {
+    height: 80px;
+    width: 80px;
+}
+
+a span {
+    text-align: center;
+    font-size: larger;
+    transition: font-size 0.3s ease;
+}
+
+a:hover span {
+    font-size: xx-large;
+}
